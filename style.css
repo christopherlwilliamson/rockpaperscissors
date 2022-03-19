@@ -3,10 +3,13 @@ body {
 }
 
 .header  {
+    display: flex;
     text-align: center;
     color: violet;
     text-shadow: 2px 2px blue;
-    
+    background-color: black;
+    justify-content: center;
+    border-radius: 36px;
 }
 
 .container {
@@ -14,20 +17,50 @@ body {
     padding-left: 20em;
     padding-right: 20em;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 36px;
     color: #fdf6e3;
 }
 
 button {
     padding: 30px;
-    background-color: white;
+    text-align: center;
     margin: 60px;
+    border-radius: 36px;
+    color: white;
+    border: 2px dashed black;
+    transition-duration: 0.4s;
 }
 
+.button1:hover {
+    background-color:red !important; /* Green */
+    color: black !important;
+}
+
+.button2:hover {
+    background-color:white !important; /* Green */
+    color: black !important;
+}
+
+.button3:hover {
+    background-color:orange !important; /* Green */
+    color: black !important;
+}
+
+.button4:hover {
+    background-color:green !important; /* Green */
+    color: black !important;
+}
 #result {
     text-align: center;
     padding: 36px;
     color: white;
     background-color: black;
     height: 164px;
+    border-radius: 36px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
 }

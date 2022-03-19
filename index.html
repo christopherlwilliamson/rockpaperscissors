@@ -4,17 +4,22 @@
 <head>
   <title>Rock Paper Scissors</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-deep-purple.css">
 </head>
 <body>
-    <div class="header">
+    <div class="header w3-theme">
         <h1>ヽ(>∀<☆)ノ🪨📃✂</h1>
     </div>
     <div class="container">
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>      
+        <button id="rock" class="w3-theme-d5 button1">Rock</button>
+        <button id="paper" class="w3-theme-d5 button2">Paper</button>
+        <button id="scissors" class="w3-theme-d5 button3">Scissors</button>      
     </div>
-    <div id="result"></div>
+    <div id="result" class="w3-theme-d4"></div>
+
+    <div class="container2">
+        <button onClick="window.location.reload();" class="refresh w3-theme-d5 button4">Refresh Page</button>
+    </div>
 
   <script src="scripts.js"></script>
 </body>
