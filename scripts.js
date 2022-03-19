@@ -6,6 +6,22 @@ function computerPlay() {
     return choices[Math.floor(Math.random() * choices.length)]
 }
 
+const buttons = document.querySelectorAll('button');
+
+function disableButtons() {
+    document.getElementById("rock").disabled = true;
+    document.getElementById("paper").disabled = true;
+    document.getElementById("scissors").disabled = true;
+}
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        playRound(button.id);
+        console.log(playerScore)
+    })
+})
+
+
 function playRound(playerSelection) {
     let computerSelection = computerPlay()
     let result = ""
@@ -41,11 +57,4 @@ function playRound(playerSelection) {
     document.getElementById('result').innerHTML = result
     return
 }
-
-function game() {
-    for (let i = 0; i < 5; i++) {
-        playRound(prompt());
-    }
-}
-
 
